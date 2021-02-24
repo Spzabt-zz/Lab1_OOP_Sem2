@@ -21,10 +21,10 @@ namespace Lab1_Sem2_Var7
         {
             Random rand = new Random();
 
-            /*label1.Text = rand.Next(10).ToString();
-            label2.Text = rand.Next(10).ToString();
-            label3.Text = rand.Next(10).ToString();
-            label4.Text = rand.Next(10).ToString();*/
+            label1.Visible = true;
+            label2.Visible = true;
+            label3.Visible = true;
+            label4.Visible = true;
 
             var firstColorSet = label1.BackColor = Color.FromArgb(rand.Next(256), rand.Next(256),
                 rand.Next(256));
@@ -49,6 +49,36 @@ namespace Lab1_Sem2_Var7
                 rand.Next(256));
         }
 
+        private void Calculate(Label l1, Label l2)
+        {
+            Random random = new Random();
+
+            switch (random.Next(4))
+            {
+                case 0:
+                    l1.Visible = false;
+                    break;
+                case 1:
+                    l1.Visible = true;
+                    break;
+                case 2:
+                    l1.Visible = false;
+                    l2.Visible = true;
+                    break;
+                case 3:
+                    l1.Visible = true;
+                    l2.Visible = false;
+                    break;
+                default:
+                    MessageBox.Show("???");
+                    break;
+            }
+
+            if (label1.Visible == false && label2.Visible == false
+                                        && label3.Visible == false && label4.Visible == false)
+                MessageBox.Show("You won, press restart button or exit!");
+        }
+
         private void Form1_Load(object sender, EventArgs e)
         {
             SetSettings();
@@ -57,30 +87,35 @@ namespace Lab1_Sem2_Var7
         private void button1_Click(object sender, EventArgs e)
         {
             SetButtonColor(button1);
-
-            label1.Visible = false;
+            Calculate(label3, label2);
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             SetButtonColor(button2);
-
-            label1.Visible = true;
+            Calculate(label4, label1);
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             SetButtonColor(button3);
+            Calculate(label2, label4);
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
             SetButtonColor(button4);
+            Calculate(label1, label3);
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
             SetSettings();
+        }
+
+        private void button6_Click_1(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

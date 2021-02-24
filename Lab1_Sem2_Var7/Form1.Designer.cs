@@ -38,6 +38,7 @@
             this.button4 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.button5 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -127,9 +128,20 @@
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(167, 57);
             this.button5.TabIndex = 12;
-            this.button5.Text = "Reload game";
+            this.button5.Text = "Restart game";
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // button6
+            // 
+            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (204)));
+            this.button6.Location = new System.Drawing.Point(358, 12);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(167, 57);
+            this.button6.TabIndex = 14;
+            this.button6.Text = "Exit";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click_1);
             // 
             // Form1
             // 
@@ -137,6 +149,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Lab1_Sem2_Var7.Properties.Resources.unnamed;
             this.ClientSize = new System.Drawing.Size(704, 441);
+            this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.button4);
@@ -151,6 +164,8 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
         }
+
+        private System.Windows.Forms.Button button6;
 
         private System.Windows.Forms.Button button5;
 
