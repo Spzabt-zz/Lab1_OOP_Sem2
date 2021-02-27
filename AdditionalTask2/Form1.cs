@@ -12,6 +12,8 @@ namespace AdditionalTask2
 {
     public partial class Form1 : Form
     {
+        private bool _state;
+        
         public Form1()
         {
             InitializeComponent();
@@ -19,22 +21,35 @@ namespace AdditionalTask2
 
         private void button1_Click(object sender, EventArgs e)
         {
-            /*Label[] _labels = new Label[Controls.];
-            for (int i = 0; i < 16; i++)
+            if (_state)
+                MessageBox.Show("There is nothing left to delete!");
+
+            int labelCount = 0;
+            Control[] findLabels;
+
+            for (int i = 0; i < Controls.Count; i++)
             {
-                _labels[i] = 
+                findLabels = Controls.Find($"label{(i+1).ToString()}", true);
+                if (findLabels.Length == Decimal.Zero)
+                    break;
+                labelCount++;
             }
             
-            int f = Controls.Count;
-            if (Controls.Contains(this.))
-            MessageBox.Show(f.ToString());*/
-            Label[] labels = new Label[Controls.Count - 1];
-            for (int i = 0; i < Controls.Count - 1; i++)
+            var labels = new Label[labelCount];
+            
+            for (int i = 0; i < labelCount; i++)
             {
-                Control[] findLabels = Controls.Find($"label{(i+1).ToString()}", true);
-                labels[i] = (Label) findLabels[i];
+                /*Control[] */findLabels = Controls.Find($"label{(i+1).ToString()}", true);
+                labels[i] = (Label) findLabels[0];
             }
-            /*Control[] labels = Controls.Find("label", true);*/
+
+            foreach (var label in labels)
+            {
+                label.Dispose();
+                _state = true;
+            }
+
+            labelCount = 0;
         }
     }
 }
