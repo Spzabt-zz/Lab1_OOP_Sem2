@@ -39,7 +39,7 @@ namespace AdditionalTask2
             
             for (int i = 0; i < labelCount; i++)
             {
-                /*Control[] */findLabels = Controls.Find($"label{(i+1).ToString()}", true);
+                findLabels = Controls.Find($"label{(i+1).ToString()}", true);
                 labels[i] = (Label) findLabels[0];
             }
 
