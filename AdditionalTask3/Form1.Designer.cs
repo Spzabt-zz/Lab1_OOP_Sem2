@@ -65,13 +65,13 @@
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(182, 317);
             this.listBox1.TabIndex = 0;
-            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(82, 60);
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(200, 200);
+            this.pictureBox1.Size = new System.Drawing.Size(364, 317);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
