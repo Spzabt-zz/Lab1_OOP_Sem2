@@ -4,10 +4,10 @@
     <PropertyGroup>
         <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
         <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-        <ProjectGuid>{9F2DA1C4-6671-432D-BDF6-63D18648923B}</ProjectGuid>
+        <ProjectGuid>{48EF212B-0488-4AAE-B424-C688E35D7484}</ProjectGuid>
         <OutputType>WinExe</OutputType>
-        <RootNamespace>AdditionalTask4</RootNamespace>
-        <AssemblyName>AdditionalTask4</AssemblyName>
+        <RootNamespace>Ex3_MDI_Application</RootNamespace>
+        <AssemblyName>Ex3_MDI_Application</AssemblyName>
         <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
         <FileAlignment>512</FileAlignment>
         <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -46,17 +46,25 @@
         <Reference Include="System.Xml" />
     </ItemGroup>
     <ItemGroup>
-        <Compile Include="Form1.cs">
+        <Compile Include="ChildForm.cs">
+          <SubType>Form</SubType>
+        </Compile>
+        <Compile Include="ChildForm.Designer.cs">
+          <DependentUpon>ChildForm.cs</DependentUpon>
+        </Compile>
+        <Compile Include="ParentForm.cs">
             <SubType>Form</SubType>
         </Compile>
-        <Compile Include="Form1.Designer.cs">
-            <DependentUpon>Form1.cs</DependentUpon>
+        <Compile Include="ParentForm.Designer.cs">
+            <DependentUpon>ParentForm.cs</DependentUpon>
         </Compile>
-        <Compile Include="LabelClicker.cs" />
         <Compile Include="Program.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
-        <EmbeddedResource Include="Form1.resx">
-          <DependentUpon>Form1.cs</DependentUpon>
+        <EmbeddedResource Include="ChildForm.resx">
+          <DependentUpon>ChildForm.cs</DependentUpon>
+        </EmbeddedResource>
+        <EmbeddedResource Include="ParentForm.resx">
+          <DependentUpon>ParentForm.cs</DependentUpon>
         </EmbeddedResource>
         <EmbeddedResource Include="Properties\Resources.resx">
             <Generator>ResXFileCodeGenerator</Generator>

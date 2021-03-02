@@ -4,10 +4,10 @@
     <PropertyGroup>
         <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
         <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-        <ProjectGuid>{9F2DA1C4-6671-432D-BDF6-63D18648923B}</ProjectGuid>
+        <ProjectGuid>{C50D7A54-F5C4-4D97-96E3-E0CBB2A37F4F}</ProjectGuid>
         <OutputType>WinExe</OutputType>
-        <RootNamespace>AdditionalTask4</RootNamespace>
-        <AssemblyName>AdditionalTask4</AssemblyName>
+        <RootNamespace>Ex1</RootNamespace>
+        <AssemblyName>Ex1</AssemblyName>
         <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
         <FileAlignment>512</FileAlignment>
         <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -52,7 +52,6 @@
         <Compile Include="Form1.Designer.cs">
             <DependentUpon>Form1.cs</DependentUpon>
         </Compile>
-        <Compile Include="LabelClicker.cs" />
         <Compile Include="Program.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
         <EmbeddedResource Include="Form1.resx">

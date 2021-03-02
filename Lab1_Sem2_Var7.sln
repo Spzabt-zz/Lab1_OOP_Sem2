@@ -12,6 +12,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdditionalTask3", "Addition
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdditionalTask4", "AdditionalTask4\AdditionalTask4.csproj", "{9F2DA1C4-6671-432D-BDF6-63D18648923B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex1", "ExampleTasks\Ex1\Ex1.csproj", "{C50D7A54-F5C4-4D97-96E3-E0CBB2A37F4F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex2", "ExampleTasks\Ex2\Ex2.csproj", "{574DD91C-004D-4D11-99A8-45371CE9596D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex3_MDI_Application", "ExampleTasks\Ex3_MDI_Application\Ex3_MDI_Application.csproj", "{48EF212B-0488-4AAE-B424-C688E35D7484}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -42,5 +48,17 @@ Global
 		{9F2DA1C4-6671-432D-BDF6-63D18648923B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9F2DA1C4-6671-432D-BDF6-63D18648923B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9F2DA1C4-6671-432D-BDF6-63D18648923B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C50D7A54-F5C4-4D97-96E3-E0CBB2A37F4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C50D7A54-F5C4-4D97-96E3-E0CBB2A37F4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C50D7A54-F5C4-4D97-96E3-E0CBB2A37F4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C50D7A54-F5C4-4D97-96E3-E0CBB2A37F4F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{574DD91C-004D-4D11-99A8-45371CE9596D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{574DD91C-004D-4D11-99A8-45371CE9596D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{574DD91C-004D-4D11-99A8-45371CE9596D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{574DD91C-004D-4D11-99A8-45371CE9596D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48EF212B-0488-4AAE-B424-C688E35D7484}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48EF212B-0488-4AAE-B424-C688E35D7484}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48EF212B-0488-4AAE-B424-C688E35D7484}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48EF212B-0488-4AAE-B424-C688E35D7484}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
